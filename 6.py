@@ -8,10 +8,10 @@ try:
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля
-    first_name = browser.find_element(By.XPATH, '//input[@placeholder="Input your first name"]')
+    first_name = browser.find_element(By.XPATH, '//input[@placeholder="Input your name"]')
     first_name.send_keys("Ivan")
 
-    last_name = browser.find_element(By.XPATH, '//input[@placeholder="Input your last name"]')
+    last_name = browser.find_element(By.XPATH, '//input[@placeholder="Input your name"]')
     last_name.send_keys("Petrov")
 
     email = browser.find_element(By.XPATH, '//input[@placeholder="Input your email"]')
